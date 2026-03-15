@@ -1,5 +1,9 @@
 //.........................................Variables in JavaScript...............................................
 
+// =========================
+// Variables in JavaScript:
+// =========================
+
 // A variable is a container used to store data.
 // The value stored in a variable can be changed later.
 
@@ -24,10 +28,10 @@ console.log("Y value:", y);
 console.log("isFollow", isFollow);
 console.log("isfollow", isfollow);
 
-let name1 = "Amaresh"; // properly declared variable
+let name5 = "Amaresh"; // properly declared variable
 name2 = "Rahul";       // automatically becomes global
 const pi = 3.14;
-console.log(name1);
+console.log(name5);
 console.log(name2);
 console.log(pi);
 
@@ -63,9 +67,65 @@ console.log(name4);
 // | `var`   | old method (avoid using) |
 
 
-// Variable Rules:
+// ===================================================
+// Variable Rules in JavaScript with proper examples:
+// ===================================================
+
 // Variable names are case sensitive; “a” & “A” is different.
 // Only letters, digits, underscore( _ ) and $ is allowed. (not even space)
 // Only a letter, underscore( _ ) or $ should be 1st character.
 // Reserved words cannot be variable names. (like: let, var, const, if, else, for, while, etc..)
+
+
+// =================
+// proper examples:
+// =================
+
+// 1️⃣ Variable names are case sensitive
+// "a" and "A" are treated as different variables
+
+let a = 10;
+let A = 20;
+
+console.log(a); // Output: 10
+console.log(A); // Output: 20
+
+
+// 2️⃣ Only letters, digits, underscore (_) and $ are allowed
+
+let name1 = "Amaresh";  // ✔ valid (letters + number)
+let user_name = "Rahul"; // ✔ valid (underscore)
+let $price = 50; // ✔ valid ($ symbol)
+
+// ❌ Invalid examples
+// let user name = "Amit";   // space not allowed
+// let @price = 30;          // special characters not allowed
+
+
+// 3️⃣ First character must be a letter, underscore (_) or $
+
+let age1 = 23;    // ✔ valid (starts with letter)
+let _count = 5;  // ✔ valid (starts with underscore)
+let $total = 100; // ✔ valid (starts with $)
+
+// ❌ Invalid example
+// let 1age = 25;   // cannot start with a number
+
+
+// 4️⃣ Reserved words cannot be used as variable names
+// These words are already used by JavaScript
+
+// ❌ Invalid examples
+// let let = 10;
+// let var = 20;
+// let const = 30;
+// let if = 40;
+
+// ✔ Correct examples
+let studentName = "Amaresh";
+let studentAge = 23;
+
+console.log(studentName);
+console.log(studentAge);
+
 
