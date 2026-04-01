@@ -30,7 +30,7 @@ console.log("isfollow", isfollow);
 
 let name5 = "Amaresh"; // properly declared variable
 name2 = "Rahul";       // automatically becomes global
-const pi = 3.14;
+const pi = 3.14;       // value cannot change 
 console.log(name5);
 console.log(name2);
 console.log(pi);
@@ -45,10 +45,11 @@ EX:-1
 let name3 = "Naruto"; // global variable
 function greet() {
     console.log(name3); // accessible inside the function
+    return name3;
 }
 greet();
-console.log(name3); // accessible outside the function
-
+console.log(name3);  // accessible outside the function
+console.log(greet()); // using return so we can use greet function.
 // Here name3 is global, so it can be used everywhere in the program.
 
 

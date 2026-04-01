@@ -84,6 +84,39 @@ let id = Symbol("id");
 
 console.log(id);
 
+// EX - 1:
+const nameKey = Symbol("nameKey"); 
+// Create a unique Symbol used as a key for storing the name
+
+const user = {
+    [nameKey] : "Amaresh"
+    // Use the Symbol as a key (not a normal string key)
+    // Stores "Amaresh" in a hidden/unique property
+};
+
+const uniqueID = Symbol("uniqueID"); 
+// Create another Symbol to store user ID
+
+user[uniqueID] = 101; 
+// Add a new property to user object using Symbol key
+// Stores ID value 101
+
+let inputName = prompt("Enter your name"); 
+// Ask user to enter their name (works in browser)
+// Store the input value in variable inputName
+
+if (inputName === user[nameKey]){
+    // Compare user input with stored name (Amaresh)
+    // user[nameKey] accesses value using Symbol key
+
+    console.log("Your id is: ", user[uniqueID]); 
+    // If names match, print the user ID (101)
+
+} else {
+    console.log("Wrong User"); 
+    // If names don't match, show error message
+}
+
 
 // ========================================
 // Non-Primitivie data types in JavaScript:
@@ -112,6 +145,7 @@ let student = {
 console.log(student);        // prints whole object
 console.log(student.name);   // access specific value
 console.log(student.age);
+console.log(student.city);
 
 // 2️⃣ Array
 // An array stores multiple values in a single variable.
@@ -128,13 +162,20 @@ console.log(fruits[2]);   // third element
 // A function is a block of code that performs a task.
 
 // Function example
-
+// EX -1
 function greet() {
     console.log("Hello Amaresh");
 }
 
 greet(); // calling the function
 
+// EX -2
+function sum(x , y){
+    let c = x+y;
+    console.log(c);
+    return c;
+}
+sum(2,3);
 
 // Summary Table
 // | Type     | Example                      |
