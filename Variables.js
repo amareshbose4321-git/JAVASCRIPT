@@ -129,4 +129,15 @@ let studentAge = 23;
 console.log(studentName);
 console.log(studentAge);
 
+// Qs1. Create a const object called “product” to store information shown in the picture.
 
+const Product = {
+    Title : "Ball Pen",
+    Ratting : 4,
+    RattingCount : 7002,
+    Deal : true,
+    Badge : "Deal of the day",
+    Price : 275,
+    MRP : 300,
+    Off_Percentage : 5
+};

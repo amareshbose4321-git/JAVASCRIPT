@@ -1,0 +1,104 @@
+body {
+    background: #ebebeb;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;   /* Full screen height */
+    margin: 0;           /* Remove fixed margin */
+    padding: 20px;       /* Flexible spacing */
+    box-sizing: border-box;
+}
+
+.card {
+    width: 100%; 
+    height: 100%;
+                /* Flexible width */
+    max-width: 280px;        /* Keeps design limit */
+    min-height: 350px;
+
+    background: #fff;
+    border-radius: 12px;
+
+    border: 10px solid #424141;  /* Proper border */
+
+    padding: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.2)
+}
+
+.image-box {
+    background: #ced5d6;
+    border-radius: 12px;
+    padding: 12px;
+    text-align: center;
+}
+
+.image-box img {
+    border-radius: 15px;
+    height: 180px;
+}
+
+.content h3 {
+    font-size: 20px;
+    margin: 12px 0px 8px 0px;
+}
+
+/* Rating */
+.rating {
+    display: flex;
+    gap: 6px;
+
+}
+
+#stars {
+    color: #ffa41c;
+}
+
+.count {
+    color: #007185;
+    margin-top: 3px;
+}
+
+/* Deal */
+.deal {
+    background: #cc0c39;
+    color: white;
+    display: inline-block;
+    padding: 4px 6px;
+    margin: 8px 0;
+    font-size: 12px; 
+    box-shadow: 0 1px 20px rgb(226, 226, 226); 
+    transition: 0.3s ease;
+}
+
+/* Deal Hover */
+.deal:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 3px rgba(0, 0, 0, 0.2);
+     
+}
+
+/* Price */
+.current {
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+.mrp {
+    text-decoration: line-through;
+    color: gray;
+    margin-left: 6px;
+}
+
+.off {
+    margin-left: 6px;
+}
